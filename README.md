@@ -17,9 +17,26 @@
 
 ### Tecnologias
 
-<p aligh="center"> As segui
-Carolline Santos11:06 PM
+
 <p aligh="center"> As seguintes ferramentas foram utilizadas para construir o projeto: </p>
 
  -[Java]([https://www.java.com/pt-BR/](https://www.java.com/pt-BR/))
+ 
  -[Java Fx]([https://openjfx.io/](https://openjfx.io/))
+ 
+ ### Funcionalidades implementadas
+ <p aligh="center">Cadastrar produtos; </p>
+ <p aligh="center">Pesquisar todos produtos; </p>
+ <p aligh="center">Pesquisar um determinado produto pelo nome; </p>
+  <p aligh="center">Remover um produto; </p>
+ <p aligh="center">Salvar todas as alterações; </p>
+ <p aligh="center">Cadastrar cliente; </p>
+ <p aligh="center">Pesquisar todos os clientes que tem o mesmo nome que o parametro passado; </p>
+ <p aligh="center">Remover um cliente; </p>
+ 
+ ### Funcionalidades que falta ser implementada
+<p aligh="center"> Vendas que tem como objetivo ser um tipo de recibo </p>
+<p aligh="center"> ProdutoComValidade: tem a função de dizer a validade </p>
+
+ 
+ 
