@@ -1,4 +1,5 @@
 # LojaSoulEco
+observação: o código está no "MASTER"
 
 ## Descrição
 <p aligh="center"> Programa de controle de estoque de uma loja. </p> 
