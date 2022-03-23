@@ -2,7 +2,7 @@
 observação: o código está no "MASTER"
 
 ## Descrição
-<p aligh="center"> Programa de controle de estoque de uma loja. </p> 
+<p aligh="center"> Programa que controla o estoque de uma loja. </p> 
 
 <h4 aligh="center">
   Loja SoulEco concluida
