@@ -1,7 +1,7 @@
 # LojaSoulEco
 
 ## Descrição
-<p aligh="center"> Programa que controla o estoque de uma loja. </p> 
+<p aligh="center"> Programa que simula uma loja virtual, onde o proprietário adiciona um produto e automaticamente aparece para seus clientes . </p> 
 
 <h4 aligh="center">
   Loja SoulEco concluida
@@ -13,7 +13,7 @@
 
 ### Rodando a aplicação 
 
- <p aligh="center">Deve utilizar o intelliJ IDEA tanto para a aplicação quanto para o teste. </p>
+ <p aligh="center">É necessario usar um banco de dados para que as informações sejam armazenadas, você poderá fazer isso na classe "Conexao"</p>
 
 ### Tecnologias
 
@@ -26,17 +26,14 @@
  
  ### Funcionalidades implementadas
  <p aligh="center">Cadastrar produtos; </p>
+ <p aligh="center">Cadastrar cliente; </p>
+ <p aligh="center">Um painel que mostra ao admin todas as vendas realizadas; </p>
  <p aligh="center">Pesquisar todos produtos; </p>
  <p aligh="center">Pesquisar um determinado produto pelo nome; </p>
-  <p aligh="center">Remover um produto; </p>
- <p aligh="center">Salvar todas as alterações; </p>
- <p aligh="center">Cadastrar cliente; </p>
+ <p aligh="center">Remover um produto; </p>
  <p aligh="center">Pesquisar todos os clientes que tem o mesmo nome que o parametro passado; </p>
  <p aligh="center">Remover um cliente; </p>
  
- ### Funcionalidades que falta ser implementada
-<p aligh="center"> Vendas que tem como objetivo ser um tipo de recibo </p>
-<p aligh="center"> ProdutoComValidade: tem a função de dizer a validade </p>
 
  
  
