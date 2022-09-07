@@ -9,7 +9,7 @@
 
 ### Pré-requisitos
 
-<p aligh="center"> Antes de mais nada é necessário, instalar em sua máquina o [Java]([https://www.java.com/pt-BR/](https://www.java.com/pt-BR/)). Um bom editor como o [IntelliJ IDEA]([https://www.jetbrains.com/pt-br/idea/](https://www.jetbrains.com/pt-br/idea/)) vai ajudar muito a trabalha com o código. </p>
+<p aligh="center"> Antes de mais nada é necessário, instalar em sua máquina o [Java]([https://www.java.com/pt-BR/](https://www.java.com/pt-BR/)). Um bom editor como o [IntelliJ IDEA]([https://www.jetbrains.com/pt-br/idea/](https://www.jetbrains.com/pt-br/idea/)) vai ajudar muito a trabalha com o código e também é necessario instalar um sistema gerenciador de banco de dados como o Postgresql por exemplo. </p>
 
 ### Rodando a aplicação 
 
