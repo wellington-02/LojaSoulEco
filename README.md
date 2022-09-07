@@ -13,7 +13,7 @@
 
 ### Rodando a aplicação 
 
- <p aligh="center">É necessario usar um banco de dados para que as informações sejam armazenadas, você poderá fazer isso na classe "Conexao"</p>
+ <p aligh="center">É necessario configurar um banco de dados para que as informações sejam armazenadas, você poderá fazer isso na classe "Conexao"</p>
 
 ### Tecnologias
 
