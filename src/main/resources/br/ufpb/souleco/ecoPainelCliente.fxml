@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufpb.souleco.EcoPainelClienteController">
+   <children>
+      <StackPane layoutX="209.0" layoutY="107.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <AnchorPane fx:id="pnlCarrinho" prefHeight="643.0" prefWidth="1055.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="500.0" layoutY="85.0" prefHeight="504.0" prefWidth="259.0" style="-fx-background-color: #fff;" vbarPolicy="NEVER">
+                     <content>
+                        <Label fx:id="scrollCarrinho" alignment="TOP_CENTER" prefHeight="555.0" prefWidth="260.0" style="-fx-background-color: #fff;" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="861.0" layoutY="189.0" text="Total">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="carrinhoPrecoTotal" layoutX="855.0" layoutY="239.0" prefHeight="27.0" prefWidth="84.0" text="R$: 0,00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="838.0" layoutY="293.0" mnemonicParsing="false" onAction="#ComprarButtonOnAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #09A532;" text="Comprar" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnlCompra" prefHeight="643.0" prefWidth="1055.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="500.0" layoutY="54.0" prefHeight="581.0" prefWidth="1366.0" style="-fx-background-color: #fff;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <content>
+                        <Label fx:id="scrollCompra" alignment="TOP_CENTER" prefHeight="1452.0" prefWidth="1366.0" style="-fx-background-color: #fff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnlQuemSomos" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" prefHeight="610.0" prefWidth="1167.0" style="-fx-background-color: #fff;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <content>
+                        <Label fx:id="scrollQuemSomos" alignment="TOP_CENTER" prefHeight="1615.0" prefWidth="1362.0" style="-fx-background-color: #fff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnlPesquisaProduto" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <children>
+                  <HBox layoutY="7.0" prefHeight="96.0" prefWidth="823.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="540.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="7.0">
+                     <children>
+                        <Pane prefHeight="63.0" prefWidth="317.0" />
+                        <TextField fx:id="produtoPesField" prefHeight="25.0" prefWidth="387.0">
+                           <HBox.margin>
+                              <Insets left="119.0" top="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#PesquisarProdutoButtonOnAction" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #09A532;" text="Pesquisar" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="30.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fx:id="pesquisarIcon2" fitHeight="17.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../imgs/searchW.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="resultadoPesMessageLabel" alignment="TOP_LEFT" layoutX="549.0" layoutY="191.0" prefHeight="157.0" prefWidth="259.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="124.0" layoutY="117.0" prefHeight="38.0" prefWidth="762.0" text="Resultado da Pesquisa" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="fotoProdPes" fitHeight="150.0" fitWidth="174.0" layoutX="350.0" layoutY="194.0" pickOnBounds="true" />
+                  <Button fx:id="addCarrinho" layoutX="604.0" layoutY="373.0" mnemonicParsing="false" onAction="#addProdCarrinhoOnAction" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: #09A532;" text="Adicionar ao Carrinho" textFill="WHITE" />
+                  <Pane fx:id="escondeAddCarrinho" layoutX="596.0" layoutY="369.0" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #ffff;" />
+                  <Label fx:id="mensagemBtnAddCarrinho" alignment="CENTER" layoutX="561.0" layoutY="351.0" prefHeight="20.0" prefWidth="221.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pnlHome" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="7.0" layoutY="28.0" prefHeight="580.0" prefWidth="1359.0" style="-fx-background-color: #fff;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <content>
+                        <Label fx:id="homeMessageLabel" alignment="TOP_CENTER" prefHeight="1544.0" prefWidth="1366.0" style="-fx-background-color: #fff;" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" prefHeight="610.0" prefWidth="1370.0" style="-fx-background-color: #fff;" text="Bem Vindo a Soul Eco">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <Pane layoutX="44.0" prefHeight="25.0" prefWidth="1018.0" style="-fx-background-color: #09A532;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button layoutX="1330.0" layoutY="-5.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="12.0" prefWidth="16.0" style="-fx-background-color: #09A532;">
+               <graphic>
+                  <ImageView fx:id="fecharIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../imgs/closeRed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></Pane>
+      <AnchorPane layoutX="208.0" layoutY="21.0" prefHeight="86.0" prefWidth="935.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox layoutX="341.0" layoutY="5.0" prefHeight="77.0" prefWidth="809.0">
+               <children>
+                  <Button fx:id="btnHome" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="77.0" prefWidth="97.0" style="-fx-background-color: #fff;" text="Home">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="homeIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/homeB2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPesquisar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="77.0" prefWidth="174.0" style="-fx-background-color: #fff;" text="Pesquisar Produto">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="pesquisarIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/searchB.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCarrinho" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="77.0" prefWidth="114.0" style="-fx-background-color: #fff;" text="Carrinho">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="carrinhoDeCompraIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/carrinhoDeCompra.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCompra" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="77.0" prefWidth="114.0" style="-fx-background-color: #fff;" text="Compra">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="compraIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/compra.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnQuemSomos" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="77.0" prefWidth="148.0" style="-fx-background-color: #fff;" text=" Quem Somos">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="quemSomosIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/quemSomos.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="77.0" prefWidth="148.0" style="-fx-background-color: #fff;" text="Logout">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="logoutIcon" fitHeight="22.0" fitWidth="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../../../imgs/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fx:id="arvoreIcon" fitHeight="80.0" fitWidth="77.0" layoutX="25.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../imgs/arvoreIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="56.0" text="Soul Eco">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

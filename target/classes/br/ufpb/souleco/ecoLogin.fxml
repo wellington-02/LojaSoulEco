@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufpb.souleco.EcoController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane layoutX="-4.0" layoutY="-79.0" prefHeight="21.0" prefWidth="224.0" style="-fx-background-color: #09A532;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Pane layoutY="377.0" prefHeight="27.0" prefWidth="224.0" style="-fx-background-color: #09A532;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Label alignment="CENTER" layoutY="5.0" prefHeight="17.0" prefWidth="220.0" text="By Wellington" />
+                    </children></Pane>
+                <ImageView fx:id="arvoreImageView" fitHeight="352.0" fitWidth="225.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../imgs/arvoreGrande.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="iconImageView" fitHeight="69.0" fitWidth="70.0" layoutX="100.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../imgs/arvoreIcon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="30.0" layoutY="144.0" prefHeight="20.0" prefWidth="77.0" text="Usuario">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usuarioTextField" layoutX="100.0" layoutY="140.0" opacity="0.6" prefHeight="26.0" prefWidth="173.0" promptText="Usuario" />
+                <Label layoutX="31.0" layoutY="190.0" prefHeight="20.0" prefWidth="64.0" text="Senha">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="senhaField" layoutX="100.0" layoutY="187.0" opacity="0.6" prefHeight="26.0" prefWidth="173.0" promptText="Senha" />
+                <Button fx:id="botaoEntrar" layoutX="29.0" layoutY="261.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="244.0" style="-fx-background-color: #0DDE5A;" text="Entrar" textFill="WHITE" />
+                <Button fx:id="botaoCancelar" layoutX="29.0" layoutY="349.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="244.0" style="-fx-background-color: #0DDE5A;" text="Cancelar" textFill="WHITE" />
+                <Label fx:id="loginMessageLabel" alignment="TOP_CENTER" layoutX="2.0" layoutY="230.0" prefHeight="20.0" prefWidth="296.0" textFill="#39e38e">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="151.0" layoutY="83.0" text="Login">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+            <Button fx:id="botaoCadastrar" layoutX="29.0" layoutY="304.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="244.0" style="-fx-background-color: #0DDE5A;" text="Cadastrar-se" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
